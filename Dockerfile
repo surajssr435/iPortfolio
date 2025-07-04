@@ -5,7 +5,7 @@ RUN apt-get update -y && \
     apt-get install -y nginx && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
+#update nginx root file
 # Remove default HTML content
 RUN rm -rf /var/www/html/*
 
